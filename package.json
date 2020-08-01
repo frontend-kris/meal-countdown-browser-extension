@@ -1,0 +1,59 @@
+{
+  "title": "Simple Browser Extension using React",
+  "name": "react-browser-extension-minimal",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/herodrigues/react-browser-extension-minimal.git"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "material-ui": "^0.20.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-compound-timer": "^1.2.0",
+    "react-countdown": "^2.2.1",
+    "react-dom": "^16.12.0",
+    "webextension-polyfill": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "base64-image-loader": "^1.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "raw-loader": "^4.0.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "description": "Browser extension using React",
+  "bugs": {
+    "url": "https://github.com/herodrigues/react-browser-extension/issues"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "chrome",
+      "browser"
+    ]
+  },
+  "homepage": "https://github.com/herodrigues/react-browser-extension#readme",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js --progress --colors",
+    "dev": "./node_modules/.bin/webpack --config webpack.dev.js --progress --colors",
+    "start": "./node_modules/.bin/webpack --config webpack.dev.js --watch --progress --colors",
+    "react-devtools": "./node_modules/.bin/react-devtools &"
+  },
+  "keywords": [
+    "extension",
+    "react",
+    "hooks"
+  ],
+  "author": "Herinson Rodrigues"
+}
